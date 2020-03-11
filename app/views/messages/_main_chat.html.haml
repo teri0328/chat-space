@@ -1,0 +1,36 @@
+.main_chat
+  .main-header
+    .main-header__leftbox
+      ママママママm
+      .main-header__leftbox__current-group
+
+      .main-header__leftbox__member-list
+
+        .main-header__leftbox__member-list__member
+          mmm
+        .main-header__leftbox__member-list__member
+          kkkk
+    .main-header__edit-btn
+      = link_to "#" do
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          kkk
+        .message__upper-info__date
+          hhh
+      .message__text
+        dddd
+
+
+
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
+      
