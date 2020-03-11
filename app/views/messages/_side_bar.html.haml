@@ -2,14 +2,14 @@
   .leftbar
     .inbar
       .namebar
-        masa
+        = current_user.name
       .freebar
         .xbar
           = link_to "#" do
             = icon('fas', 'edit')
         .ybar
-          = link_to "#" do
-            = icon('fas', 'cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .groups
     .group
       .group__name
