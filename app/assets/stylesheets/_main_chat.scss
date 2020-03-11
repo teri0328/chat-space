@@ -2,8 +2,6 @@
   background-color: #ffffff;
   width: calc(100vw - 300px);
   float: left;
-
-
   .main-header {
     height: 100px;
     padding: 0 40px;
@@ -38,9 +36,6 @@
       }
     }
   }
-
-
-
   .messages {
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
@@ -50,15 +45,12 @@
       &__upper-info{
         display: flex;
         &__talker{
-
         }
         &__date{
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
-
         }
-
       }
       &__text{
         color: #434a54;
@@ -67,7 +59,6 @@
       }
     }
   }
-
   .form {
     height: 90px;
     padding: 20px 40px;
@@ -84,7 +75,6 @@
           color: #434a54;
           border-style: none;
         }
-          
         &__image {
           font-size: 1.3rem;
           position: absolute;
@@ -94,7 +84,6 @@
           &__file{
             display: none;
           }
-        
         }
       }
       .submit-btn {
@@ -106,7 +95,6 @@
         color: white;
         cursor: pointer;
       }
-    
     }
   }
 }
