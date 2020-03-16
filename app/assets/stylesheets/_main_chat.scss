@@ -35,6 +35,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 40px 45px;
+    overflow: scroll;
     .message{
       padding-bottom: 40px;
       &__upper-info{
@@ -56,30 +57,33 @@
     height: 90px;
     padding: 20px 40px;
     background-color: #ddd;
-    form {
+    .new_message {
       display: flex;
-      .input-box{
+      .form__message {
         position: relative;
+        height: 50px;
         width: 100%;
-        &__text{
-          height: 50px;
-          width: 100%;
-          padding: 0 40px 0 10px;
-          color: #434a54;
-          border-style: none;
-        }
-        &__image {
-          font-size: 1.3rem;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
-          &__file{
+        padding: 0 40px 0 10px;
+        color: #434a54;
+        border-style: none;
+      }
+      .form__mask{
+        font-size: 1.3rem;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        .form__mask__image {
+          .icon {
+            position: absolute;
+            right: 155px;
+            top: 15px;
+          }
+          .hidden{
             display: none;
           }
         }
       }
-      .submit-btn {
+      .form__submit {
         background-color: #38aef0;
         width: 100px;
         height: 50px;

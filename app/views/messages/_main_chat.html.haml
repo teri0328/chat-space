@@ -8,34 +8,21 @@
         - @group.users.each do |user| 
           .main-header__leftbox__member-list__member
             = user.name
- 
     .main-header__edit-btn
       = link_to edit_group_path(@group) do
         Edit
 
   .messages
     = render @messages
-
-    -# - @messages.each do |message|
-    -#   = render partial: "messages/message", locales: {message: message}
       .message
         .message__upper-info
           .message__upper-info__talker
           .message__upper-info__date
         .message__text
-
-  -# .form
-  -#   %form.new_message
-  -#     .input-box
-  -#       %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-  -#       %label{class: "input-box__image"}
-  -#         = icon('fas', 'image')
-  -#         %input{type: "file", class: "input-box__image__file"}
-  -#     %input{type: "submit", class: "submit-btn"}
-
+          .message__text__content
 
   .form
-    = form_for [@group, @message] do |f|
+    = form_for [@group, @message], remote: true do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'form__mask__image' do
