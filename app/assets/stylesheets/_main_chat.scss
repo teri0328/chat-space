@@ -34,25 +34,33 @@
   .messages {
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
-    padding: 40px 45px;
+    padding: 46px 40px;
     overflow: scroll;
     .message{
       padding-bottom: 40px;
-      &__upper-info{
+      .upper-message{
         display: flex;
-        &__date{
-          color: #999999;
-          font-size: 12px;
-          margin-left: 10px;
-        }
-      }
-      &__text{
-        color: #434a54;
-        font-size: 14px;
         margin-bottom: 10px;
+        &__user-name{
+        }
+        &__date{
+            color: #999999;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        
+        .lower-message{
+          margin-bottom: 10px;
+          
+          &__content{
+            color: #434a54;
+            font-size: 14px;
+          }
+        }
       }
     }
   }
+  
   .form {
     height: 90px;
     padding: 20px 40px;

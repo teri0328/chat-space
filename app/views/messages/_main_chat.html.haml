@@ -9,17 +9,10 @@
           .main-header__leftbox__member-list__member
             = user.name
     .main-header__edit-btn
-      = link_to edit_group_path(@group) do
-        Edit
+      = link_to 'EDIT',edit_group_path(@group)
 
   .messages
     = render @messages
-      .message
-        .message__upper-info
-          .message__upper-info__talker
-          .message__upper-info__date
-        .message__text
-          .message__text__content
 
   .form
     = form_for [@group, @message], remote: true do |f|
