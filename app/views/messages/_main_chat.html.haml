@@ -15,7 +15,7 @@
     = render @messages
 
   .form
-    = form_for [@group, @message], remote: true do |f|
+    = form_for [@group, @message], local: true do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'form__mask__image' do
