@@ -60,7 +60,7 @@ gem 'rails-controller-testing'
 gem 'factory_bot_rails'
 gem 'faker'
 gem "jquery-rails"
-gem 'fog-aws'
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
@@ -74,3 +74,4 @@ end
 group :production do
   gem 'unicorn', '5.4.1'
 end
+gem 'fog-aws'
