@@ -11,13 +11,18 @@
     &__leftbox{
       margin-top: 35px;
       &__current-group {
-        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
       }
       &__member-list {
         display: flex;
         font-size: 12px;
         color:#999999;
       }
+        &__member-list__member{
+          margin-left: 0.3rem;
+
+        }
     }
     &__edit-btn{
       height: 40px;
