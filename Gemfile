@@ -76,3 +76,4 @@ group :production do
 end
 gem 'fog-aws'
 gem 'haml-rails'
+gem  " activesupport "、" > = 5.2.4.3 "
